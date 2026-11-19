@@ -1,5 +1,5 @@
 # public-data-pipeline
-Public data pipeline -- Python, SQL &amp; PostgreSQL
+Public data pipeline -- Python, SQL &; PostgreSQL
 objectif : utilisation API, et librairies pour récupération, ingestion de données, stockage, transformation et visualisation de données
 
 ## Étape 1 :
