@@ -41,12 +41,25 @@ def write_file(data: dict, file_path: str) -> None:
 
 
 if __name__ == "__main__":
-    url = "https://gbfs.velobixi.com/gbfs/2-2/fr/station_status.json"
-    bixi_Data = get_data(url)
-    print(type(bixi_Data))
+    url_1= "https://gbfs.velobixi.com/gbfs/2-2/fr/station_status.json"
+    station_Status_Data = get_data(url_1)
+    print(type(station_Status_Data))
 
-    file_path = "data.json"
-    write_file(bixi_Data, file_path)
+    file_path = "station_status_data.json"
+    write_file(station_Status_Data, file_path)
 
-    for key, value in bixi_Data.items():
+    for key, value in station_Status_Data.items():
         print(key)
+
+    print("-" * 50)
+
+    url_2 = "https://gbfs.velobixi.com/gbfs/2-2/en/station_information.json"
+    station_Information_Data = get_data(url_2)
+    print(type(station_Information_Data))
+
+    file_path = "station_information_data.json"
+    write_file(station_Information_Data, file_path)
+
+    for key, value in station_Information_Data.items():
+        print(key)
+
